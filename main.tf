@@ -37,7 +37,7 @@ resource   "azurerm_resource_group"   "rg"   {
    resource_group_name   =   azurerm_resource_group.rg.name 
 
    ip_configuration   { 
-     name   =   "ipconfig1" 
+     name   =   "ipconfig2" 
      subnet_id   =   azurerm_subnet.frontendsubnet.id 
      private_ip_address_allocation   =   "Dynamic" 
      public_ip_address_id   =   azurerm_public_ip.myvm1publicip.id 
