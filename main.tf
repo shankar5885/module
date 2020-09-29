@@ -24,7 +24,7 @@ resource   "azurerm_resource_group"   "rg"   {
  } 
 
  resource   "azurerm_public_ip"   "myvm1publicip"   { 
-   name   =   "pip2" 
+   name   =   "pip3" 
    location   =   "northeurope" 
    resource_group_name   =   azurerm_resource_group.rg.name 
    allocation_method   =   "Dynamic" 
