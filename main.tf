@@ -24,7 +24,7 @@ resource   "azurerm_resource_group"   "rg"   {
  } 
 
  resource   "azurerm_public_ip"   "myvm1publicip"   { 
-   name   =   "pip1" 
+   name   =   "pip2" 
    location   =   "northeurope" 
    resource_group_name   =   azurerm_resource_group.rg.name 
    allocation_method   =   "Dynamic" 
@@ -37,7 +37,7 @@ resource   "azurerm_resource_group"   "rg"   {
    resource_group_name   =   azurerm_resource_group.rg.name 
 
    ip_configuration   { 
-     name   =   "ipconfig2" 
+     name   =   "ipconfig1" 
      subnet_id   =   azurerm_subnet.frontendsubnet.id 
      private_ip_address_allocation   =   "Dynamic" 
      public_ip_address_id   =   azurerm_public_ip.myvm1publicip.id 
